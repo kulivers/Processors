@@ -1,4 +1,4 @@
-dirToSaveDocs: D:\Work\CBAP_1\Processors\Data
+dirToSaveDocs: /home/asto/egor/Processors/Data
 toSendFilter:
   errors: true
   successes: false

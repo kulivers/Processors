@@ -1,8 +1,8 @@
 mode: oneByOneIfNotSuccess
 outputServicesPathTypes:
   [
-    { path: D:\Work\CBAP_1\Processors\Host\config\output-errors-kafka.yaml, type: kafka },
-    { path: D:\Work\CBAP_1\Processors\Host\config\output-memory.yaml, type: memory },
+    { path: /home/asto/egor/Processors/Host/config/output-errors-kafka.yaml, type: kafka },
+    { path: /home/asto/egor/Processors/Host/config/output-memory.yaml, type: memory },
   ]
 toSendFilter:
   errors: true
