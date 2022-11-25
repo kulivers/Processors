@@ -1,4 +1,4 @@
-host: http://autoqa:9200
+host: http://192.168.2.139:9200/
 authentication:
   type: basic
   username: elastic
