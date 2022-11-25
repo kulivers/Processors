@@ -1,0 +1,30 @@
+connectorsConfigs:
+  - inputType: kafka
+    inputServiceConfigPath: D:\Work\CBAP_1\Processors\Host\config\input-kafka.yaml
+    processors:
+      - dll: D:\Work\CBAP_1\Processors\Implementation\ElasticSearch\ElasticProcessor\bin\Debug\net6.0\ElasticProcessor.dll
+        config: D:\Work\CBAP_1\Processors\Host\config\processor-elastic.yaml
+        name: Elasticsearch writer1
+    proxyTypeMapper: KafkaToElastic
+    outputType: combined
+    outputServiceConfigPath: D:\Work\CBAP_1\Processors\Host\config\output-combined.yaml
+  
+  - inputType: kafka
+    inputServiceConfigPath: D:\Work\CBAP_1\Processors\Host\config\input-errors-kafka.yaml
+    processors:
+      - dll: D:\Work\CBAP_1\Processors\Implementation\ElasticSearch\ElasticProcessor\bin\Debug\net6.0\ElasticProcessor.dll
+        config: D:\Work\CBAP_1\Processors\Host\config\processor-elastic.yaml
+        name: Elasticsearch writer1
+    proxyTypeMapper: KafkaToElastic
+    outputType: combined
+    outputServiceConfigPath: D:\Work\CBAP_1\Processors\Host\config\output-combined.yaml
+  
+  - inputType: memory
+    inputServiceConfigPath: D:\Work\CBAP_1\Processors\Host\config\input-memory.yaml
+    processors:
+      - dll: D:\Work\CBAP_1\Processors\Implementation\ElasticSearch\ElasticProcessor\bin\Debug\net6.0\ElasticProcessor.dll
+        config: D:\Work\CBAP_1\Processors\Host\config\processor-elastic.yaml
+        name: Elasticsearch writer1
+    proxyTypeMapper: memoryToElastic
+    outputType: combined
+    outputServiceConfigPath: D:\Work\CBAP_1\Processors\Host\config\output-combined.yaml

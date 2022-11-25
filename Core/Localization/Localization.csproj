@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="Processors\ProcessorResources.resx">
+            <Generator>PublicResXFileCodeGenerator</Generator>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <LastGenOutput>ProcessorResources.Designer.cs</LastGenOutput>
+        </EmbeddedResource>
+        <EmbeddedResource Update="SuperAgent\SuperAgentResources.resx">
+          <Generator>PublicResXFileCodeGenerator</Generator>
+          <LastGenOutput>SuperAgentResources.Designer.cs</LastGenOutput>
+          <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+        </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Update="Processors\ProcessorResources.Designer.cs">
+            <Generator>PublicResXFileCodeGenerator</Generator>
+            <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+            <LastGenOutput>ProcessorResources.Designer.cs</LastGenOutput>
+            <DependentUpon>ProcessorResources.resx</DependentUpon>
+        </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="SuperAgent\SuperAgentResources.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>SuperAgentResources.resx</DependentUpon>
+      </Compile>
+    </ItemGroup>
+
+</Project>

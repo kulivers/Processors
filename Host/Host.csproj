@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net6.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <RootNamespace>SuperAgent</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Api\Connector.Api\Connector.Api.csproj" />
+      <ProjectReference Include="..\Api\Processors.Api\Processors.Api.csproj" />
+      <ProjectReference Include="..\Core\Connector\Connector.csproj" />
+      <ProjectReference Include="..\Core\Localization\Localization.csproj" />
+      <ProjectReference Include="..\Implementation\ProcessorsInteractor\ProcessorsInteractor.csproj" />
+    </ItemGroup>
+
+</Project>

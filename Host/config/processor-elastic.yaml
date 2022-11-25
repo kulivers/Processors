@@ -1,0 +1,5 @@
+host: http://autoqa:9200
+authentication:
+  type: basic
+  username: elastic
+  password: wO83y=NsJQVrzCdIUseY

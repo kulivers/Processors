@@ -1,0 +1,8 @@
+topics: [ errorsTopic ]
+client:
+    bootstrapServers: hldev04:9092
+    autoOffsetReset: earliest
+    groupId: Comindware
+commitOnError: false
+messageKeyType: null
+messageValueType: string

@@ -1,0 +1,7 @@
+topics: [ errorsTopic ]
+client:
+  bootstrapServers: hldev04:9092
+toSendFilter:
+  errors: true
+  successes: false
+  nullValues: false

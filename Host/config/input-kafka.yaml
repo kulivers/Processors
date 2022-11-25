@@ -1,0 +1,7 @@
+topics: [ coolTopic ]
+client:
+    bootstrapServers: hldev04:9092
+    groupId: Comindware
+commitOnError: false
+messageKeyType: Null
+messageValueType: brokerMessage

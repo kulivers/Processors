@@ -1,0 +1,6 @@
+dirToSaveDocs: D:\Work\CBAP_1\Processors\Data
+toSendFilter:
+  errors: true
+  successes: false
+  nullValues: false
+  
